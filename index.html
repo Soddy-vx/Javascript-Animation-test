@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" Content="ie=edge">
+	<link rel="stylesheet" href="fullpage.min.css">
+	<link rel="stylesheet" href="style.css">
+	<title>Fullpage</title>
+</head>
+<body>
+	<div id="fullpage">
+		<section class="section s1">
+			<header>
+				<nav>
+					<div id="logo"><h3>Sodai Hirano</h3></div>
+					<img class="hum-nav" src="images/hum.png" alt="humburger_navigation">
+
+				</nav>
+			</header>
+				<div class="hero">
+					<img class="img_blueSky" src="images/blue.jpg" alt="picture">
+					<h1 class="headline">Who is this guy?</h1>
+				</div>
+
+		</section>
+		<div class="slider"></div>
+
+
+
+
+		<section class="section s2">
+			<div class="content-wrapper">	
+				<div class="half">
+					<h1 class="title">
+						What is this guy good at ?
+					</h1>
+					<button class="btn">Read more</button>
+				</div>
+
+				<div class="half-back">
+					<img class="icon" src="images/icon1.jpg" alt="light-icon">
+				  	<div class="description">
+				  		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum blandit dolor. Sed sit amet sem pellentesque, aliquam eros in, ultricies magna. Maecenas et orci ac orci facilisis tincidunt at nec nulla. Praesent euismod nulla nunc. Ut lobortis sem at tortor elementum, eget ultricies leo hendrerit. 
+
+					</p>
+				  	</div>
+				</div>
+			</div>
+
+		</section>
+
+
+
+
+
+
+		<section class="section s3">
+			<h1 class="title">third section</h1>
+
+		</section>
+	</div>
+
+
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+	<script src="fullpage.min.js"></script>
+	<script>
+		new fullpage('#fullpage',{
+			autoScrolling:true,
+			navigation:true
+		});
+	</script>
+	<script src="app.js"></script>
+
+</body>
+</html>

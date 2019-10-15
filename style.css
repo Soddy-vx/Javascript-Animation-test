@@ -1,0 +1,173 @@
+#fullpage{
+	margin: 0;
+	padding:0; 
+}
+nav{
+	font-family: ;
+	display:grid;
+	grid-template-columns: 10% 1fr 1fr 10%;
+	color: white;
+	align-items: center;
+}
+#logo{
+	grid-column: 2/3;
+	font-size: 23px;
+}
+.hum-nav{
+	width: 10%;
+	justify-self: end;
+}
+
+section{
+	display: flex;
+	height: 80vh;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.hero{
+	height: 60%;
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+}
+
+.hero img{
+	width: 100%;
+	height: 80%;
+	object-fit: cover;
+}
+
+.hero::after{
+	content: "";
+	background-color: black;
+	width: 100%;
+	height: 80%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.3;
+}
+
+.headline{
+	position:absolute;
+	top: 50%;
+	left:0;
+	color: white;
+	font-size: 70px;
+	transform:translate(10%,-115%);
+	z-index: 3;
+}
+
+.slider{
+	position: absolute;
+	top:  0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: #f1828d;
+	z-index:-1;
+}
+
+/*second page*/
+
+.s2{
+	background-color: #f2f1ef;
+	width: 100%;
+	height: 100%;
+	margin:0 auto; 
+	display: inline-block;
+}
+.content-wrapper{
+	/*background-color: skyblue;*/
+	width: 80%;
+	height: 80%;
+	margin:10%;
+	padding: 10px; 
+}
+.half{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.title{
+	top:20%;
+	left: 15%;
+	color: black;
+	z-index: 1;
+	font-size: 50px;
+	width: 70%;
+	color:red;
+}
+
+.btn{
+	width: 50%;
+	background-color:#f27935;
+	margin: auto;
+}
+
+.half-back{
+	background-color: #fcd670;
+	width: 50%;
+	height: 100%;
+	float: right;
+	position: relative;
+}
+
+.icon{
+	position: absolute;
+	width: 40%;
+	top: 0;
+	left: 35%;
+}
+
+.description{
+	width: 50%;
+	position: absolute;
+	top: 40%;
+	left:30%;
+}
+
+
+/*third page*/
+
+.s3{
+	background-image:url(images/surf.jpg);
+	background-size: cover;
+	max-width: 100%;
+}
+
+@media screen and (max-width:600px) { 
+    /*　画面サイズが700pxまではここを読み込む　*/
+.description{ 
+	top:20%!important;
+	left: 30%!important;
+	font-size: 14px;	
+}
+}
+
+/*.section h1{
+	font-size: 54px;
+	position: absolute;
+	top:10%;
+	left:35%;
+	transform: translate(-10%,-35%);
+	background: linear-gradient(to left,#87c7df,#648896);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+}*/
+
+/*.s2 h1{
+	background:linear-gradient(to left top,black,white);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+}
+*/
+/*.s3 h1{
+	background:linear-gradient(to left top,#0E2F44,#C303B1);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+}*/
+
